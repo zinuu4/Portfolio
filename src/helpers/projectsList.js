@@ -1,5 +1,5 @@
-import project01 from "./../img/projects/marvell.jpg";
-import project01Big from "./../img/projects/marvell.jpg";
+import project01 from "./../img/projects/marvell.webp";
+import project01Big from "./../img/projects/marvell.webp";
 
 const projects = [
 	{

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {useParams} from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import motionParams from "../services/motionParams";
 import BtnGitHub from "../components/btnGitHub/BtnGitHub";
@@ -13,6 +14,12 @@ const Project = () => {
 
     return (
 		<motion.main {...motionParams} className="section">
+
+			<Helmet>
+				<meta name="description" content="Portfolio project"/>
+    		<title>{project.title} Project</title>
+			</Helmet>
+
 			<div className="container">
 			<Link to='/projects' style={{'fontSize': '18px', 'cursor': 'pointer', 'color': 'var(--title-1)'}} >&larr; Back</Link>
 				<div className="project-details">

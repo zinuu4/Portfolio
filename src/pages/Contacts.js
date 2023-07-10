@@ -1,10 +1,17 @@
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 import motionParams from '../services/motionParams.js';
 
 const Contacts = () => {
     return (
 		<motion.main {...motionParams} className="section">
+
+			<Helmet>
+				<meta name="description" content="Zinovy Lebed contacts"/>
+    		<title>Contacts</title>
+			</Helmet>
+
 			<div className="container">
 				<h1 className="title-1">Contacts</h1>
 

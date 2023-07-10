@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 import motionParams from '../services/motionParams';
 import Header from './../components/header/Header';
@@ -6,6 +7,12 @@ import Header from './../components/header/Header';
 const Home = () => {
     return (
 		<motion.div {...motionParams}>
+
+			<Helmet>
+				<meta name="description" content="Zinovy Lebed Portfolio"/>
+    		<title>Zinovy Lebed</title>
+			</Helmet>
+
 			<Header />
 			<main className="section">
 				<div className="container">
